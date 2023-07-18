@@ -1,0 +1,568 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-family: sans-serif;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+
+.side-menu{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(250, 248, 248);
+}
+
+.container{
+    width: 85%;
+    height: 91.5vh;
+    background-color: rgb(234, 234, 234);
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.logo-section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-section img{
+    height: 40px;
+}
+
+.menu-items{
+    padding: 30px 30px 0px 30px;
+    color: rgb(81, 81, 81);
+}
+
+.menu-items ul .a{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.a ul li{
+    list-style: none;
+    padding: 7.5px 15px 7.5px 20px;
+    margin: 2.5px 0px 2.5px 0px;
+}
+
+.a ul li:hover{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.a div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.humburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.humburger div{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0px;
+}
+
+.a div i{
+    cursor: pointer;
+}
+
+.menu-items ul li:nth-child(1) ul li:nth-child(1){
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+} 
+
+.search-engine{
+    background-color: rgb(222, 218, 218);
+    border-radius: 50px;
+    padding: 0px 0px 0px 10px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.search-engine input{
+    background: transparent;
+    width: 350px;
+    padding: 10px 10px 10px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+}
+
+.search-engine input:focus{
+    outline: none;
+}
+
+.view-setting{
+    display: flex;
+    border-radius: 50px;
+    background-color: white;
+    width: max-content;
+}
+
+.view-setting div{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#grid{
+    background-color: orange;
+}
+
+.green-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgb(50, 189, 50);
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.filter-setting{
+    padding: 4px;
+    border-radius: 50px;
+    background-color: orange;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.filter-view{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    width: 850px;
+    justify-content: space-between;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-del{
+    background-color: white;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 2px 10px 2px 2px;
+}
+
+.menu-title{
+    display: flex;
+    align-items: center;
+}
+
+.user-photo{
+    /* background-color: rgb(222, 218, 218);
+    padding: 5px;
+    border-radius: 50px; */
+    display: flex;
+    align-items: center;
+}
+
+.user-photo div{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(222, 218, 218);
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.hori-menu{
+    margin-top: 40px;
+    border-bottom: solid 2px rgb(222, 218, 218);
+}
+
+.hori-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.hori-menu ul li{
+    padding: 10px 15px 10px 15px;
+    margin-right: 5px;
+}
+
+.hori-menu ul li:hover{
+    color: orange;
+    border-bottom: solid 2px orange;
+    cursor: pointer;
+}
+
+.hori-menu ul li:nth-child(5){
+    color: orange;
+    border-bottom: solid 2px orange;
+}
+
+.section-1{
+    margin-top: 15px;
+    display: flex;
+    align-items: end;
+    background-color: rgb(250, 248, 248);
+    padding: 0px 30px 30px 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-1 h4{
+    margin: 15px 0px 10px 15px;
+}
+
+.profile-selection{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+    align-items: center;
+    border: solid 2px rgb(222, 218, 218);
+}
+
+.btnsection-1{
+    margin-bottom: 4px;
+}
+
+.btnsection-1 .btn1{
+    padding: 10px;
+    border-radius: 50px;
+    width: 180px;
+    background-color: orange;
+    border: none;
+    margin-right: 10px;
+    color: white;
+}
+
+.btnsection-1 .btn2{
+    padding: 10px;
+    border-radius: 50px;
+    width: 90px;
+    background-color: gray;
+    border: none;
+    color: white;
+}
+
+.section-2{
+    background-color: rgb(250, 248, 248);
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.profile-name{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.profile-name div{
+    width: 50%;
+}
+
+.title{
+    background-color: rgb(222, 218, 218);
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-sub{
+    display: flex;
+    width: 100%;
+}
+
+.project-sub{
+    display: flex;
+    width: 100%;
+}
+
+.projects-list{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 15px 10px;
+    align-items: flex-start; 
+}
+
+.project-del1{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.sub-details1 ,.sub-details2{
+    width: 50%;
+    padding: 15px 10px 15px 10px;
+}
+
+.education-sub .sub-details1:nth-child(1){
+    border-right: solid 1.5px rgb(222, 218, 218);
+}
+
+.project-sub .projects-list:nth-child(1){
+    border-right: solid 1.5px rgb(222, 218, 218);
+}
+
+.project-sub .projects-list:nth-child(2){
+    border-left: solid 1.5px rgb(222, 218, 218);
+}
+
+.education-sub .sub-details2:nth-child(2){
+    border-left: solid 1.5px rgb(222, 218, 218);
+}
+
+.calls-sub .calls-list:nth-child(1){
+    border-right: solid 1.5px rgb(222, 218, 218);
+}
+
+.calls-sub .calls-list:nth-child(2){
+    border-left: solid 1.5px rgb(222, 218, 218);
+}
+
+.del-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.del-list div{
+    display: flex;
+    align-items: center;
+}
+
+.del-list div label{
+    width: 130px;
+}
+
+.custom{
+    display: flex;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+}
+
+.custom input{
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 26px;
+    width: 26px;
+    background-color: #D8FCF2;
+    border-radius: 8px;
+}
+
+.custom input:checked ~ .checkmark {
+    background-color: #24A581;
+}
+
+.custom input:checked ~ .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+}
+  
+.custom .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #24A581;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.small-sec p{
+    width: 60px;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: orange;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.project-del{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.project-del div{
+    display: flex;
+}
+
+#project-date{
+    justify-content: space-between;
+}
+
+.project-del label{
+    width: 100px;
+}
+
+.project-del label{
+    width: 110px;
+}
+
+.project-del1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 2px;
+}
+
+.sub-del{
+    margin-left: 5px;
+    width: 100%;
+}
+
+#card{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.calls-sub{
+    display: flex;
+    width: 100%;
+}
+
+.cal-del{
+    margin-top: 10px;
+}
+
+.cal-del p{
+    margin-top: 2.5px;
+}
+
+.calls-list{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 15px 10px;
+    align-items: flex-start; 
+}
+
+.calls-del1{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    /* display: flex; */
+    /* padding: 20px; */
+}
+
+.y{
+    display: flex;
+    padding: 10px 20px 20px 20px;
+}
+
+.f-del{
+    width: 50%;
+}
+
+.section-3{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.section-3 button:nth-child(2){
+    padding: 5px 15px 5px 15px;
+    background-color: orange;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+.section-3 button:nth-child(1){
+    margin-right: 20px;
+    background-color: white;
+    border: solid 1.5px black;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+}
+
+.calls-info{
+    background-color: #24A581;
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    display: flex;
+}
+
+.calls-info p{
+    margin-top: 5px;
+}
+
+.calls-info div{
+    width: 50%;
+}
